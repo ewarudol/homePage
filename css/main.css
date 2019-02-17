@@ -1,0 +1,397 @@
+/* 
+0. Media queries
+1. Body
+2. Header
+3. Skillbox
+    a) General
+    b) Hex 
+    c) Skill-name
+    d) Skill-points
+    e) Arrow-down
+    f) Center-line (attached to first hex)
+    g) Adjusting backgrounds and positions
+4. Ending scope
+*/
+
+/* 0. Media queries ********************************** */
+
+@media only screen and (max-width: 10002px) {
+    /* preventing insane zooming */
+    .center-line {
+        width: 6px;
+        height: 0%;
+    }
+
+    .skill-name-right p {
+        padding-left: 50px;
+        font-size: 60px;
+    }
+
+    .skill-name-box p.lvl-desc-heading {
+        font-size: 30px;
+    }
+
+    .skill-name-box p.lvl-desc-example {
+        font-size: 20px;
+    }
+
+    .lvl-desc-box {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 30px;
+    }
+
+    .home {
+        font-size: 40px;
+    }
+    
+    .here h1{
+        font-size: 110px;
+    }
+    
+    .about-holder-l{
+       width: 45%;
+    }
+    
+    .about-holder-c{
+       width: 10%;
+    }
+    
+    .header-section{
+    margin-top: -180px;
+    }
+}
+
+@media only screen and (max-width: 2902px) {
+    /* preventing insane zooming */
+    .center-line {
+        width: 4px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .hex-image {
+        width: 400px;
+    }
+
+    .center-line {
+        width: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+    .hex-image {
+        width: 250px;
+    }
+
+    .center-line {
+        width: 4px;
+    }
+
+    .skill-name-right p {
+        padding-left: 5px;
+        font-size: 30px;
+    }
+
+    .skill-name-box p.lvl-desc-heading {
+        font-size: 15px;
+    }
+
+    .skill-name-box p.lvl-desc-example {
+        font-size: 12px;
+    }
+
+    .skill-name-box .lvl-desc-box {
+        padding-top: 10px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+    }
+    
+    .home{
+        font-size: 15px;
+    }
+    
+    .here h1{
+        font-size: 30px;
+    }
+    
+     .about-holder-l{
+       width: 100%;
+    }
+    
+    .about-holder-c{
+       width: 100%;
+       padding-top: 50px;    
+    }
+
+    .header-section{
+    margin-top: -80px;
+    }
+}
+
+@media only screen and (max-width: 320px) {}
+
+/* 1. Body ********************************** */
+
+html,
+body,
+.viewport {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #070b14;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Header ********************************** */
+
+/* backgrounds.css */
+
+.header-box {
+    height: 100%;
+    background-image: url(../images/header.png);
+    background-clip: border-box;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav {
+    text-align: center;
+    margin-top: -260px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.home {
+    font-weight: 200;
+    letter-spacing: 15;
+    padding-bottom: 40px;
+}
+
+.home a {
+    color: white;
+    text-decoration: none;
+}
+
+.here h1 {
+    font-weight: 300;
+    letter-spacing: 17;
+}
+
+.header-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-holder-c{
+    margin: 5px;
+}
+
+.about-holder-l{
+    color: #cd86a2;
+    opacity: 0.3; 
+}
+
+.about-holder-l .about-header h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.about-holder-l .about-info{
+    font-size: 20px;
+}
+
+.about{
+   padding-left: 15%;
+   padding-right: 20%;
+}
+
+/* 3. Skillbox ********************************** */
+
+/* a) General **************** */
+
+.skills {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skill-box {
+    background-clip: border-box;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.skill-content {
+    z-index: 2;
+    position: relative;
+}
+
+/* b) Hex **************** */
+
+.hex-box {
+    text-align: center;
+    width: 100%;
+}
+
+img.hex-image{
+    filter: brightness(1);
+     transition: all .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+img.hex-image:hover{
+    
+   filter: brightness(1.4);
+  
+}
+
+/* c) Skill-name **************** */
+
+.skill-name-box {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-name-left {
+    width: 50%;
+}
+
+.skill-name-right {
+    width: 50%;
+    text-align: left;
+}
+
+.skill-name-right p {
+    color: rgba(255, 255, 255, 0.0);
+    font-weight: 200;
+}
+
+.lvl-desc-box {
+    opacity: 0;
+}
+
+p.lvl-desc-heading {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+p.lvl-desc-example {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.underline {
+    width: 0;
+}
+
+
+/* e) Arrow-down **************** */
+
+/* arrow-down.css */
+
+/* f) Center-line **************** */
+
+.center-line {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    content: '';
+    width: 2px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 50%;
+    margin-top: -65px;
+
+}
+
+/* g) Adjusting backgrounds and positions **************** */
+
+/* backgrounds.css */
+
+
+/* 4. Ending scope ********************************** */
+
+.end-scope{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.end-scope h2{
+    font-size: 40px;
+    color: #395885;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 20;
+}
+
+.blog-like{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.blog-like h2{
+    
+    color: #366a6d;
+}
+
+.item-blog{
+    text-align: left;
+    width: 550px;
+    margin: 10px;
+}
+
+.item-blog h2{
+    font-size: 22px;
+    letter-spacing: 5;
+}
+
+.item-blog h2 a{
+color: #366a6d;
+text-decoration: none;
+}
+
+.item-blog img{
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.item-blog p{
+    font-size: 18px;
+    margin-top: 15;
+    color: #395885;
+    letter-spacing: 2;
+    font-weight: 200;
+}
+
+.foot{
+    margin-top: 80px;
+}
+
+.mail{
+    font-weight: 100;
+    color: #94765c;
+    font-size: 40px;
+}
+
+.credits{
+    color: #283e60;
+    margin-top: 120px;
+}
