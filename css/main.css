@@ -253,7 +253,7 @@ body {
 
 img.hex-image{
     filter: brightness(1);
-     transition: all .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 img.hex-image:hover{
@@ -371,6 +371,13 @@ text-decoration: none;
 .item-blog img{
     margin-bottom: 35px;
     width: 100%;
+    filter: brightness(1);
+    transition: all .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+}
+
+.item-blog:hover img{
+    filter: brightness(1.4);
 }
 
 .item-blog p{
@@ -394,4 +401,8 @@ text-decoration: none;
 .credits{
     color: #283e60;
     margin-top: 120px;
+}
+
+*::selection{
+    background: #402056;
 }
