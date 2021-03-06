@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Ewa Rudol .NET Developer - Ulubiony open-source</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+
+    <link rel="stylesheet" href="https://lib.arvancloud.com/ar/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="nav">
+        <a class="bgText" href="/">Home</a><br><br>
+        <a class="bgText" href="/opensource.html">Ulubiony opensource</a><br><br>
+        <a class="bgText" href="/contact.html">Kontakt</a><br><br>
+     </div>
+
+     
+    <div class="container">
+        <h1 class="type">Ulubiony open-source</h1>
+        <p class="big type">i bezpieczniejsze serwisy</p>
+<br>
+        <div class="section">
+            <h2 class="">Messenger/Whatsapp -> Signal</h2>
+            <ul>
+                <li>Komunikator, który nie podgląda.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Gmail -> Protonmail</h2>
+            <ul>
+                <li>Skrzynka, która nie podgląda.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">Google -> DuckDuckGo</h2>
+            <ul>
+                <li>Wyszukiwarka, która nie ogranicza widoczności niewygodnych wyników (i nie podgląda).</li>
+            </ul>
+        </div>
+
+
+        <div class="section">
+            <h2 class="">Windows -> Linux Manjaro</h2>
+            <ul>
+                <li>System operacyjny bez zbierania danych i wirusów.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">Youtube -> Freetube(desktop)/Invidious(przeglądarka)/NewPipe(android)</h2>
+            <ul>
+                <li>Youtube bez zbierania danych.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">Chrome -> Brave/Firefox</h2>
+            <ul>
+                <li>Przeglądarka blokująca śledzenie.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Epicgames -> GOG</h2>
+            <ul>
+                <li>
+                    Sklep z grami bez DRMów (na zawsze twoje).
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Redirector</h2>
+            <ul>
+                <li>
+                    Wtyczka do przeglądarki, żeby nie wchodzić na wścibskie strony.
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">Keepass</h2>
+            <ul>
+                <li>Bezpieczna baza haseł.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">MS Office -> Free Office</h2>
+            <ul>
+                <li>Pakiet biurowy za darmo, na zawsze, bez abonamentu.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">SurfShark</h2>
+            <ul>
+                <li>VPN, żeby nie ogłaszać gdzie się znajdujesz.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">Adblock/Blockera + Pi hole</h2>
+            <ul>
+                <li>Wtyczka do przeglądarki żeby nie oglądać reklam, filtr reklam.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="">Visual Studio -> Jet Brains Rider</h2>
+            <ul>
+                <li>.NETowe IDE na Linuxa</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>
+                <span class="color">Bonusowo</span>
+            </h2>
+            <ul>
+                <li>https://ryby.wwf.pl/</li>
+                <li>https://wszystkocopolskie.blogspot.com/p/lista-polskich-firm.html</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>
+                <span class="color">Nie jestem powiązana z żadnym serwisem/instytucją powyżej</span>
+            </h2>
+        </div>
+
+        <div class="contact">
+            <i class="fas fa-paper-plane"></i>
+            <div class="big type small">ewarudol@protonmail.com</div>
+        </div>
+        <div class="contact">
+            <i class="fab fa-gitlab"></i>
+            <div class="big type small">@ewarudol</div>
+        </div>
+        <div class="contact">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="big type small">www.linkedin.com/in/ewa-rudol</div>
+        </div>
+    </div>
+
+    <div class="footer"><span class="bgText">Poznań 2021 Ewa Rudol</span> </div>
+
+    <script>
+
+        let divs = document.getElementsByClassName("type");
+        for (var i = 0; i < divs.length; i++) {
+            let div = divs[i];
+            var count = div.innerHTML.length;
+            if(div.tagName=="h2" || div.tagName == "H2")
+                count = count +2;
+            div.style.width = count + "ch";
+            div.style.animation = "caret .3s step-end infinite alternate, type 3s steps(" + count + ", end)"
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Ewa Rudol .NET Developer - Kontakt</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+
+    <link rel="stylesheet" href="https://lib.arvancloud.com/ar/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="nav">
+        <a class="bgText" href="/">Home</a><br><br>
+        <a class="bgText" href="/opensource.html">Ulubiony opensource</a><br><br>
+        <a class="bgText" href="/contact.html">Kontakt</a><br><br>
+     </div>
+
+
+   
+    <div class="container">
+        <h1 class="type">Kontakt</h1>
+
+        <div class="contact">
+            <i class="fas fa-paper-plane"></i>
+            <div class="big type small">ewarudol@protonmail.com</div>
+        </div>
+        <div class="contact">
+            <i class="fab fa-gitlab"></i>
+            <div class="big type small">@ewarudol</div>
+        </div>
+        <div class="contact">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="big type small">www.linkedin.com/in/ewa-rudol</div>
+        </div> 
+    </div>
+
+    <div class="footer"><span class="bgText">Poznań 2021 Ewa Rudol</span> </div>
+
+    <script>
+
+        let divs = document.getElementsByClassName("type");
+        for (var i = 0; i < divs.length; i++) {
+            let div = divs[i];
+            var count = div.innerHTML.length;
+            if(div.tagName=="h2" || div.tagName == "H2")
+                count = count +2;
+            div.style.width = count + "ch";
+            div.style.animation = "caret .3s step-end infinite alternate, type 3s steps(" + count + ", end)"
+        }
+
+    </script>
+
+
+</body>
+
+</html>
